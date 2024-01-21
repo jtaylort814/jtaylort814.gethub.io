@@ -1,2 +1,2 @@
-# jtaylort814.github.io
+# jttaylort814.github.io
 The website for class
