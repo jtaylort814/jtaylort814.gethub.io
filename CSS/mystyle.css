@@ -32,7 +32,7 @@ div {
 #scroll-container {
     border: 3px solid black;
     border-radius: 5px;
-    overflow: hidden:
+    overflow: hidden;
 }
 
 #scroll-text {
