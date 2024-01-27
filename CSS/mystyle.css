@@ -11,8 +11,13 @@ body {
     background-blend-mode: lighten;    
 }
    nav {
-    text-align: center;    
+    text-decoration: none;    
    }
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
 
 h1 {
     text-align: center;
