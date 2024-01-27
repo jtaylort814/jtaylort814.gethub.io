@@ -24,9 +24,10 @@ h1 {
     max-width: 150%;
 }
 .one {
-    height: 300px;
-    width: 300px;
-    display: block;
+    text-decoration: none;  
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;   
 }
 div {
     display: block;
