@@ -6,7 +6,7 @@ body {
     font-stretch: expanded;
     font-style: oblique;
     background-color: #00FFFF;
-    background-image: url("../Images/PhilippineFlag.jpg");
+    background-image: url("../My-Philippine-Story-HTML/Images/PhilippineFlag.jpg");
     background-repeat: repeat;
     background-size: cover;
     background-position-x: center;
@@ -25,12 +25,10 @@ h1 {
 #one {
     text-align: center;
     max-width: 150%;
-}
-footer {
     text-decoration: none;  
     list-style-type: none;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between; 
 }
 div {
     display: block;
