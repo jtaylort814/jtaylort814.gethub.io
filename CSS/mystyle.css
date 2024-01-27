@@ -12,6 +12,7 @@ body {
     background-position-x: center;
     background-position-y: center;
     background-blend-mode: lighten;    
+    opacity: 0.6;
 }
    nav {
     text-decoration: none;  
