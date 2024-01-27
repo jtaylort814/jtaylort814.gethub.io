@@ -18,10 +18,7 @@ ul {
     display: flex;
     justify-content: space-between;
 }
-.current {
-  text-transform: uppercase;
-  background-color: bisque;
-}
+
 h1 {
     text-align: center;
    }
