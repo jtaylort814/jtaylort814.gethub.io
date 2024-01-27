@@ -18,6 +18,9 @@ body {
     display: flex;
     justify-content: space-between;   
    }
+img {
+    border: 5px solid #000000;
+}
 h1 {
     text-align: center;
    }
