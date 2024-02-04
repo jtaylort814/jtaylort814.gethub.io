@@ -4,7 +4,7 @@ main {
 body {
     font-family: 'Times New Roman', Times, serif;
     font-stretch: expanded;    
-    background-image: url("../Images/PhilippineFLag.jpg");
+    background-image: url(../My-Philippine-Story-HTML/Images/PhilippineFLag.jpg);
     background-color: #00FFFF;
     background-repeat: repeat;
     background-size: cover;
