@@ -5,6 +5,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-stretch: expanded;    
     background-image: url("Images/PhilippineFLag.jpg");
+    background-color: #00FFFF;
     background-repeat: repeat;
     background-size: cover;
     background-position-x: center;
