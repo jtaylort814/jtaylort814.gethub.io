@@ -1,32 +1,46 @@
 main {
     max-width: 1500px;
-}
+    }
 body {
     font-family: 'Times New Roman', Times, serif;
-    font-stretch: expanded;
+    font-stretch: expanded;   
     background-color: #00FFFF;
-    background-image: url("Images/PhilippineFLag.jpg");
+    background-image: url("Images/PhilippineFlag.jpg");
     background-repeat: repeat;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-    background-blend-mode: lighten;    
-}
+    background-blend-mode: lighten;   
+    display: block;
+   }
+
    nav {
     text-decoration: none;  
     list-style-type: none;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between; 
+    padding-left: 30px; 
+    padding-right: 30px; 
    }
-img {
+
+   nav a{
+    text-decoration: none;    
+   }
+
+   a:hover {
+    color:#ffffff;    
+   }
+
+   a:visited {
+    color:#808080;
+   }
+
+   img {
     border: 2px solid #000000;
-}
+   }
 h1 {
     text-align: center;
    }
-#center {
-    text-align: center;
-}
 #one {
     text-align: center;
     max-width: 150%;
@@ -39,7 +53,7 @@ div {
     display: block;
 }
 #scroll-container {
-    border: 3px solid black;
+    border: 3px solid #000000;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -62,6 +76,7 @@ div {
     to { -moz-transform: translateX(100%);}
 }
 
+
 /* for Chrome */
 @-webkit-keyframes my-animation {
     from { -webkit-transform: translateX(-100%); }
@@ -80,3 +95,161 @@ to {
     transform: translateX(100%);
 }
 }
+.box {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.travelimages {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.weddingimages {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.one-half {
+    display: block;
+    width: 100%;
+}
+.one {
+    display: inline-block;
+    width: 40%;    
+}
+
+#two {
+    padding-right: 45%;
+}
+
+#left {
+    text-align: left;
+}
+
+.offpage {
+    position: absolute;
+    left: -1000px;
+}
+
+.picturelist:visited {
+    color:cadetblue;
+}
+
+.picture:hover {
+    color:azure;
+}
+
+.travel:hover {
+    color:azure;
+}
+
+.wedding:hover {
+    color:azure;
+}
+
+.three {
+    display: inline-block;
+    width: auto;
+}
+
+.threeandahalf {
+    display: block;    
+}
+
+.threeandahalf img {
+    border-radius: 100%;
+}
+
+#three {
+    padding-right: 47%;
+}
+
+#heresheis {
+    text-align: right;
+}
+
+#amazingtime {
+    text-align: right;
+}
+
+#gettingmarried {
+    text-align: right;
+}
+
+.four {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+
+#four {
+    padding-right: 40%;
+}
+
+#five {
+    padding-right: 35%;
+}
+
+#six {
+    text-align: right;      
+}
+
+
+.seven {
+    margin-top: 50px; 
+    display: inline-block;
+}
+
+.seven img {
+    border-radius: 75%;
+}
+
+#eight {
+    text-align: right;
+}
+
+.nine {
+    margin-top: 50px; 
+    display: inline-block;
+}
+
+.ten {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+.twelve {
+    display: block;
+    margin-top: 70px;
+    text-align: left;    
+}
+
+.animate {
+    -webkit-transition:-webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
+	-webkit-border-radius:5px;
+}
+
+.animate:hover{
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);  
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	opacity:1;	
+	width:110px;
+	height:67px;
+}
+
+
