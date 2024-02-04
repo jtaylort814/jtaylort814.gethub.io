@@ -116,6 +116,11 @@ to {
     padding: 20px;
 }
 
+
+.travelimages:nth-child(odd) {
+    border: 4px solid black;
+}
+
 .weddingimages {
     display: grid;
     grid-template-columns: 40% 40%;
