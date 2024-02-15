@@ -8,49 +8,72 @@
         content="width=device-width, initial-scale=1.0">
         <title>My Philippine Story</title>
         <link rel="icon" type="image/jpg" href="Images/logo2.jpg">
-        <link rel="stylesheet" href="../CSS/mystyle.css">        
-    </head>  
-       <body>
+        <link rel="stylesheet" href="../CSS/mystyle.css">    
+        <link href="dist/css/lightbox.css" rel="stylesheet" /> 
+        <link href="dist/css/lightbox.min.css" rel="stylesheet" /> 
+        <script src="JS/style.js"></script>    
+    </head>    
         <main id="Main_Content">
             <header>
          <div class="offpage">
     <a href="#Main_Content">Skip to Main Content</a>    
            </div>
            <h1>Travel!!</h1>
+           <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="pictures.html">First Birthday</a>
+                <a href="travel.html">Travel Photos</a>
+                <a href="wedding.html">Wedding Photos</a>
+            </div>
+        </div>
+        <span onclick="openNav()">Menu</span>
             </header> 
-            <hr>       
+            <hr>
+       <body>
         <div class="travelimages">
-            <a href="Images/Passport.jpeg" target="new">
+            <a href="Images/Passport.jpeg" data-lightbox="images" data-title="Greyson Passport">
                 <img src="Images/Passport.jpeg" alt="Greyson Passport" style="width:55%">
             </a> 
-            <a href="Images/GenericPlane.jpg" target="new">
+            <a href="Images/GenericPlane.jpg" data-lightbox="images" data-title="And we are off!">
                 <img src="Images/GenericPlane.jpg" alt="And we are off" style="width:65%">
             </a>
-            <a href="Images/Flight.jpeg" target="new">
+            <a href="Images/Flight.jpeg" data-lightbox="images" data-title="Flight to the Philippines!">
                 <img src="Images/Flight.jpeg" alt="Flight to Philippines" style="width:65%">
             </a>
-            <a href="Images/Hawaii.jpeg" target="new">
+            <a href="Images/Hawaii.jpeg" data-lightbox="images" data-title="Hawaii on the way to the Philippines">
                 <img src="Images/Hawaii.jpeg" alt="Hawaii on the way to Philippines" style="width:65%">
             </a>
-            <a href="Images/UsinManila.jpeg" target="new">
+            <a href="Images/UsinManila.jpeg" data-lightbox="images" data-title="Us in the hotel in Manila">
                 <img src="Images/UsinManila.jpeg" alt="Us in hotel in Manila" style="width:65%">
             </a>
-            <a href="Images/UsatBeach1.jpeg" target="new">
+            <a href="Images/UsatBeach1.jpeg" data-lightbox="images" data-title="Us at the beach">
                 <img src="Images/UsatBeach1.jpeg" alt="Us at the beach" style="width:65%">
             </a>
-            <a href="Images/Fianceandsonatbeach.jpeg" target="new">
+            <a href="Images/Fianceandsonatbeach.jpeg" data-lightbox="images" data-title="My fiance and son at the beach">
                 <img src="Images/Fianceandsonatbeach.jpeg" alt="Fiance and son at the beach" style="width:65%">
             </a>
-            <a href="Images/Atthebeach1.jpeg" target="new">
+            <a href="Images/Atthebeach1.jpeg" data-lightbox="images" data-title="Beautiful view at the beach at Casa Lovena by the Sea">
                 <img src="Images/Atthebeach1.jpeg" alt="Pretty View at the Beach" style="width:65%">
             </a>
-            </div>     
+            </div>   
+            <script src="dist/js/lightbox-plus-jquery.js"></script> 
+            <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+            <script src="dist/js/lightbox.js"></script> 
+            <script src="dist/js/lightbox.min.js"></script>      
+           </body>
             <hr>
-           <footer>
+           <footer>               
                <div id="one">
-               <a href="index.html">Back to Home</a>        
-               </div>
+                <a href="index.html">Home</a>
+                <a href="#Images/atthebeach.jpg">My Family</a>
+                <a href="#Images/mindanao.jpg">Mindanao</a>
+                <a href="#Images/GenericPlane.jpg">How we met</a>
+                <a href="#Images/Threeofusbeach.jpg">Nine Months Later</a>
+                <a href="#Images/wedding2.jpg">Wedding</a>
+                <a href="#Images/USCIS.jpg">USCIS info</a>
+                </div>
            </footer>
         </main>
-      </body>
    </html>
