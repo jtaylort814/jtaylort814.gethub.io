@@ -14,7 +14,7 @@ body {
     display: block;
    }
    header {
-    background-image: url("/Images/AmericanPhilippineFlag.jpeg");
+    background-image: url("Images/AmericanPhilippineFlag.jpeg");
    }
 
    nav {
