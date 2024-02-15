@@ -9,33 +9,40 @@
         <title>My Philippine Story</title>
         <link rel="icon" type="image/jpg" href="Images/logo2.jpg">
         <link rel="stylesheet" href="../CSS/mystyle.css">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="dist/css/lightbox.css" rel="stylesheet" /> 
+        <link href="dist/css/lightbox.min.css" rel="stylesheet" />     
+        <script src="JS/style.js"></script>     
     </head>
-    <body id="top">
+    <body id="top">        
        <main id="Main_Content">        
           <header>
             <div class="offpage">
             <a href="#Main_Content">Skip to Main Content</a>
             </div>
-    <h1 id="scroll-text">My Philippine Story</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#Images/atthebeach.jpg">My Family</a>
-        <a href="#Images/mindanao.jpg">Mindanao</a>
-        <a href="#Images/GenericPlane.jpg">How we met</a>
-        <a href="#Images/Threeofusbeach.jpg">Nine Months Later</a>
-        <a href="#Images/wedding2.jpg">Wedding</a>
-        <a href="#Images/USCIS.jpg">USCIS info</a>
-          </nav>
+
+    <h1>My Philippine Story</h1>       
+            <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="pictures.html">First Birthday</a>
+                <a href="travel.html">Travel Photos</a>
+                <a href="wedding.html">Wedding Photos</a>
+            </div>
+        </div>
+        <span onclick="openNav()">Menu</span>
         </header>
         <br>
         <hr>
+        <body onclick="setDate">
         <div>
 <p>This is about my <strong>BEAUTIFUL</strong> fiance. Our son is one of the <b>brightest</b> and <em>most</em> <b>adorable</b> little dude, Greyson.</p>
-         <button onclick="pictures.html">Check it out</button>        
+         <button onclick="setDate()"> The current date is <span id = "date"></span></button>          
           </div> 
+        </body>
           <br>                
-                    <ul class="picturelist">
+                <ul class="picturelist">
                     <li class="picture"><a href="pictures.html">First Birthday</a></li>
                     <li class="travel"><a href="travel.html">Travel Photos</a></li>
                     <li class="wedding"><a href="wedding.html">Wedding Photos</a></li>
@@ -46,25 +53,39 @@
                 <p>Join us while I tell you <em>our</em> story about a guy from Texas who met an <b>amazing</b> woman from the island of Mindanoa and how we became a family.</p>
                 </div>
                 <br>
-            <div>
-                <h2>My family...</h2>
-                <a href="Images/atthebeach.jpg" target="new">
+                <h2>My family...</h2>    
+            <div id="family">                              
+                <a href="Images/atthebeach.jpg" data-lightbox="images" data-title="My Family">
                 <img src="Images/atthebeach.jpg" alt="My family" style="width:65%">
-                </a><br>                
-                  </div>
+                </a>
+                <aside>
+                    <ul id="familyone">
+                        <li>This image was taken on the west coast of Mindanao near the town of Lianga in the provence of Suigao del Sur</li>
+                        <li>Beautiful Views!</li>
+                        <li>Wonderful People</li>                        
+                        <li>Unfortunately, it is earthquake prone and can be the target of Typhoons</li>
+                        <li><a href="https://tripadvisor.com/Attraction_Review-g2223507-d2219817-Reviews-Bao_Bao_Falls-Lianga_Surigao_del_Sur_Province_Mindanao.html" target="_blank">Bao-bao Falls</a></li>
+                        <li><a href="https://tripnatrip.com/2019/04/big-times-resort-all-in-gigantic-resort.html?m=1" target="_blank">Big Times Beach Resort</a></li>
+                        <li><a href="https://theficklefeet.com/bogac-cold-spring-in-barobo/" target="_blank">Bogac Cold Springs!</a></li>
+                        <li><a href="https://mapacarta.com/15769382" target="_blank">Haycock Islands</a></li>
+                        <li><a href="https://facebook.com/profile.php?id=100076196137458" target="_blank">Casa Lovena by The Sea - Tiki Hut - Great Food - Cold Beer - Karaoke!</a></li>                        
+                    </ul>
+                  </aside>
+                    <br>  
+                    </div>
         <br>
         <hr>
-            <h3>The Island of Mindanao, Philippines</h3>
-            <div class="one-half">
+        <div class="one-half">
+            <h3>The Island of Mindanao, Philippines</h3>            
                 <a id="Images/mindanao.jpg"></a>
                 <p id="left">Below is a map of the island of Mindanao.  My fiance is from San Francisco in the Agusan del Sur provence.  It's about a three hour drive south of Butuan or 40 miles.</p>                
-                <a href="Images/mindanao.jpg" target="new">
+                <a href="Images/mindanao.jpg" data-lightbox="images" data-title="The Island of Mindanao">
                 <img src="Images/mindanao.jpg" alt="Island of Mindanao" style="float:right;width:50%">
                 </a>  
                   <ul class="one">
                     <li>It's Beautiful! &#128512;</li>                    
-                    <li>Constant Earthquakes & Flooding &#128532;</li>                   
-                    <li>It's hot!</li>
+                    <li>Constant Earthquakes & Flooding &#128532;</li>                    
+                    <li>It's hot!</li>                
                 </ul>
                 </div> 
                 <br>             
@@ -78,7 +99,7 @@
                 <hr>
                 <h4 id="heresheis">Here she is!!</h4>
                 <p id="amazingtime">We had an amazing time and we really got along great. We even took a trip to Cebu.</p><br>
-                <a href="Images/Fianceandmyself.jpg" target="new">
+                <a href="Images/Fianceandmyself.jpg" data-lightbox="images" data-title="My Fiance and Myself when we first met">
                 <img src="Images/Fianceandmyself.jpg" alt="Fiance and myself when we first met" style="float:right;width:60%">
                 </a>                                
                   </div>  
@@ -87,7 +108,7 @@
             <div class="three">
                 <a id="Images/Threeofusbeach.jpg"></a>
                 <h3>Nine months later...</h3>
-                <a href="Images/Threeofusbeach.jpg" target="new">
+                <a href="Images/Threeofusbeach.jpg" data-lightbox="images" data-title="My faince, son, and me at the beach">
                 <img src="Images/Threeofusbeach.jpg" alt="My fiance,son,and me at the beach" style="width:50%">
                 </a>              
                 <p id="three">Nine months later and back to the Philippines to be there for my fiance and my newborn son</p>               
@@ -95,12 +116,12 @@
                 <br>
             <div class="threeandahalf"> 
                 <h2 id="gettingmarried">We're getting married!!</h2> 
-                <a href="Images/Proposal.jpg" target="new">
+                <a href="Images/Proposal.jpg" data-lightbox="images" data-title="She said YES!">
                 <img src="Images/Proposal.jpg" alt="Our proposal" style="float:right;width:50%">
                 </a>
                 </div>           
             <div class="four">                               
-                <a href="Images/Paperwork.jpg" target="new">
+                <a href="Images/Paperwork.jpg" data-lightbox="images" data-title="Time for paperwork!">
                 <img src="Images/Paperwork.jpg" alt="Generic Image of Paperwork" style="width:55%">
                 </a>
                 <br>
@@ -112,7 +133,7 @@
                 <br>
             <div class="five">
                 <h3>Aren't we a cute family?</h3>
-                <a href="Images/UsThreeRestaurant.jpg" target="new">
+                <a href="Images/UsThreeRestaurant.jpg" data-lightbox="images" data-title="Us in a restaurant on the way to the beach">
                 <img src="Images/UsThreeRestaurant.jpg" alt="Us in the restaurant on the way to the beach" style="width:65%">
                 </a>
                 <a id="Images/wedding2.jpg"></a>
@@ -124,12 +145,12 @@
                 <br>
             <div class="six">
                 <p id="six">Me "shaking it" with my fiance's oldest sister during her younger sister's wedding.</p>
-                <a href="Images/Wedding2.JPG" target="new">
+                <a href="Images/Wedding2.JPG" data-lightbox="images" data-title="Dancing with my fiance's sister at the beach!">
                 <img src="Images/Wedding2.JPG" alt="Dancing with fiance's sister at wedding" style="float:right;width:70%">
                 </a>
                   </div>                
             <div class="seven">
-                <a href="Images/Wedding3.JPG" target="new">
+                <a href="Images/Wedding3.JPG" data-lightbox="images" data-title="All three of us at the wedding!">
                 <img src="Images/Wedding3.JPG" alt="All Three of us at the wedding" style="width:70%">
                 </a>
                 <p>All three of us at the wedding.</p>
@@ -139,11 +160,12 @@
                 <br> 
             <div>  
                 <p id="eight">The view from outside the wedding venue!</p><br>                 
-                <a href="Images/Atwedding.JPG" target="new">
+                <a href="Images/Atwedding.JPG" data-lightbox="images" data-title="Amazing view!!">
                 <img src="Images/Atwedding.JPG" alt="Killer view" style="float:right;width:75%">
                 </a>
                 </div>
             <div class="nine">
+                <a href="Images/Citizenship.jpg" data-lightbox="images" data-title="Greyson got his U.S. Citizenship!"></a>
                 <img src="Images/Citizenship.jpg" alt="Greyson's Citizenship!" style="width:85%">               
                 </div>
             <div class="ten">  
@@ -179,12 +201,16 @@
             </small></p>
             <br>
             <br>
-          </div>     
+          </div> 
+          <script src="dist/js/lightbox-plus-jquery.js"></script> 
+          <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+          <script src="dist/js/lightbox.js"></script> 
+          <script src="dist/js/lightbox.min.js"></script>              
      </main>
     <footer>
         <div id="one">
         <a href="index.html">Home</a>
-        <a href="#/Images/atthebeach.jpg">My Family</a>
+        <a href="#Images/atthebeach.jpg">My Family</a>
         <a href="#Images/mindanao.jpg">Mindanao</a>
         <a href="#Images/GenericPlane.jpg">How we met</a>
         <a href="#Images/Threeofusbeach.jpg">Nine Months Later</a>
@@ -202,5 +228,4 @@
        </footer> 
          </body>
  </html>
-
 
